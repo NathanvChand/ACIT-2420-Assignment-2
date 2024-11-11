@@ -27,13 +27,23 @@ if [[ -z "$new_user" ]]; then
 fi
 
 # Creating new user with the specified shell and home directory
-useradd -m -s "$user_shell" "$new_user" || error_exit "Failed to create user $new_user."
+useradd -m -s "$user_shell" "$new_user" || error_exit "can't create user $new_user."
 
 # Check if home directory was created, if not, then script is terminated
 if [[ ! -d "/home/$new_user" ]]; then
-    error_exit "Failed to create home directory for $new_user."
+    error_exit "can't create home directory for $new_user."
 fi
 
 #Copying /etc/skel into the user directory------------------------------------------------------------
+
+# Check if username was provided 
+if [ -z "$new_user" ]; then
+    error_exit "You must provide the username to copy skel files."
+fi
+
+# Copy default files from /etc/skel to the new user's home directory
+cp -r /etc/skel/. "/home/$new_user/" || error_exit "couldn't copy skel files for $new_user."
+
+
 
 
