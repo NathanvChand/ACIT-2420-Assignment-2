@@ -10,6 +10,11 @@ fi
 echo "Starting pack download"
 ./Package_Installation.sh
 
+# If script1 fails, then exit
+if [[ $? -ne 0 ]]; then exit 1; fi
 
 # call the second script
 ./Linked_files.sh
+
+# If script1 fails, exit
+if [[ $? -ne 0 ]]; then exit 1; fi
