@@ -10,3 +10,6 @@ fi
 echo "Starting pack download"
 ./Package_Installation.sh
 
+
+# call the second script
+./Linked_files.sh
