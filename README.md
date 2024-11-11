@@ -58,4 +58,29 @@ Run the script with root privileges to create a new user:
 ```bash
 sudo ./Create_User.sh -u <username> -s <shell>
 ```
+## References
+---
+
+1. **Downloading Packages on Linux**  
+   Baeldung. (n.d.). *How to Run a Script on Startup in Linux*. Retrieved from [https://www.baeldung.com/linux/run-script-on-startup](https://www.baeldung.com/linux/run-script-on-startup)
+
+2. **Creating Symbolic Links in Linux**  
+   FreeCodeCamp. (n.d.). *How to Create a Symbolic Link in Linux*. Retrieved from [https://www.freecodecamp.org/news/linux-ln-how-to-create-a-symbolic-link-in-linux-example-bash-command/](https://www.freecodecamp.org/news/linux-ln-how-to-create-a-symbolic-link-in-linux-example-bash-command/)
+
+3. **Checking for Root User**  
+   The Linux Documentation Project. (n.d.). *Advanced Bash Scripting Guide: Special Internal Variables - EUID*. Retrieved from [https://tldp.org/LDP/abs/html/internalvariables.html#EUID](https://tldp.org/LDP/abs/html/internalvariables.html#EUID)
+
+4. **Special Characters in Bash**  
+   Clemson University. (n.d.). *Bash Scripting: Special Variables*. Retrieved from [https://people.computing.clemson.edu/~jmarty/courses/commonCourseContent/AdvancedModule-BashScripting/TutorialsPointUnixBasics/unix-special-variables.pdf](https://people.computing.clemson.edu/~jmarty/courses/commonCourseContent/AdvancedModule-BashScripting/TutorialsPointUnixBasics/unix-special-variables.pdf)
+
+5. **Arch Linux Pacman Documentation**  
+   Arch Linux. (n.d.). *Pacman - ArchWiki*. Retrieved from [https://wiki.archlinux.org/title/pacman](https://wiki.archlinux.org/title/pacman)
+
+6. **getopts for Bash**  
+   DigitalOcean. (2019). *How To Use Bash's getopts to Parse Flags in Scripts*. Retrieved from [https://www.digitalocean.com/community/tutorials/how-to-use-getopts-to-parse-flags-in-bash-scripts](https://www.digitalocean.com/community/tutorials/how-to-use-getopts-to-parse-flags-in-bash-scripts)
+
+7. **User Management in Linux**  
+   Red Hat. (2021). *Understanding Linux User Management*. Retrieved from [https://www.redhat.com/sysadmin/linux-user-management](https://www.redhat.com/sysadmin/linux-user-management)
+
+---
 
