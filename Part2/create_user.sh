@@ -44,6 +44,15 @@ fi
 # Copy default files from /etc/skel to the new user's home directory
 cp -r /etc/skel/. "/home/$new_user/" || error_exit "couldn't copy skel files for $new_user."
 
+#Adding user to a group--------------------------------------------------------------------------------
+
+# this code :groupadd "new_user" adds the user to a group, if that doesnt work the script is terminated
+groupadd "$new_user" || error_exit "Failed to create primary group for $new_user."
+
+#this code just assigns the new_user to a group called "new_user", basically just putting then in their own group, or just terminating the script
+usermod -g "$new_user" "$new_user" || error_exit "Failed to assign primary group to $new_user."
+
+
 
 
 
