@@ -52,6 +52,18 @@ groupadd "$new_user" || error_exit "Failed to create primary group for $new_user
 #this code just assigns the new_user to a group called "new_user", basically just putting then in their own group, or just terminating the script
 usermod -g "$new_user" "$new_user" || error_exit "Failed to assign primary group to $new_user."
 
+# making the users password----------------------------------------------------------------------------
+
+
+#------------ Set User Password ------------
+
+# the prompt for the user password
+echo "Enter password for $new_user:"
+
+passwd "$new_user" || error_exit "Failed to set password for $new_user."
+
+echo "Password set for $new_user."
+
 
 
 
