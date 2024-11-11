@@ -25,7 +25,7 @@ The `Package_Installation.sh` script installs packages listed in the `User Packa
 
 **Usage Example:**
 ```bash
-./Package_Installation.sh
+./Package_Installation.sh```
 
 ## 2. Symbolic Links Setup
 The `Linked_files.sh` script simplifies configuration by creating symbolic links from your current setup to specified system directories.
