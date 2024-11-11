@@ -1,0 +1,32 @@
+#File Setup--------------------------------------------------------------------------------------------------------------------------------------------
+
+#Firstly make a Github repository with a README
+
+#Then go into your terminal, I'm using Windows Power shell, and log into your Arch Linux environment.
+
+#then check if you have Git installed with
+
+    #git --version
+
+#git --version will check and tell you which version of git is on your machine, if there isnt git then you'll need to download it.
+
+#then, go into the github where the example config files are and copy the https link for cloning the config files directory.
+
+#then go back into your terminal and use this command:
+     #git clone < your respository link in here >
+
+#once the files are in your machine you can check by doing ```ls``` to see the contents of your current dircetory,
+#you should see "2420-as2-starting-files" listed.
+
+#then to check inside the "2420-as2-starting-files", just do ```cd 2420-as2-starting-files``` then ```ls``` to check everything inside.
+
+#User Defined List of Packages-------------------------------------------------------------------------------------------------------------------------
+
+#In your "2420-as2-starting-files" directory, make a standard .txt file named "user_defined_packages.txt",
+#you can do this by using the touch command:
+    #touch user_defined_packages.txt
+
+#Then, simply write in the packages that the user will need:
+
+    kakoune
+    tmux
