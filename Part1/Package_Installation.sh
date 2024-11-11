@@ -1,3 +1,4 @@
+#!/bin/bash
 #This file should install the user packages
 #------------------------------------------------------------------
 
