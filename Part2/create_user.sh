@@ -7,6 +7,15 @@ error_exit() {
     echo "Error: $1"
     exit 1
   }
+
+#using getopts to assign new_user and user_shell to the options of -u and -s
+while getopts ":u:s:" opt; do
+    case $opt in
+        u) new_user="$OPTARG" ;;    # -u for username
+        s) user_shell="$OPTARG" ;;   # -s for shell
+    esac
+done
+  
 # user_shell is the variable we're checking if it's empty, and assigning it /bin/bash
 if [ -z "$user_shell" ]; then
     user_shell="/bin/bash"
